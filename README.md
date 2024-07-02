@@ -18,14 +18,14 @@ La aplicación permite el añadido y la vista de autores, libros, usuarios y pre
 
 1. Desde el panel de arriba se puede navegar por la vista de las distintas funcionalidad y dentro de cada una hay:
 
-    Una opción para llenar un formulario correspondiente a la funcionalidad.
-    Un listado de los objetos agregados.
+    #### Una opción para llenar un formulario correspondiente a la funcionalidad.
+    #### Un listado de los objetos agregados.
 
 2. desde "Inicio" puedes interactuar con el formulario de búsqueda de libros que interactúa con la db.
 
 ## Estructura del Proyecto:
 
-entidades/: Contiene los modelos y formularios de la aplicación.
-    entidades/templates/: Contiene las plantillas HTML para las vistas.
-    entidades/static/: Contiene los archivos estáticos (CSS, JS, imágenes).
-Proyecto/: Contiene la configuración principal de Django.
+##### entidades/: Contiene los modelos y formularios de la aplicación.
+##### entidades/templates/: Contiene las plantillas HTML para las vistas.
+##### entidades/static/: Contiene los archivos estáticos (CSS, JS, imágenes).
+##### Proyecto/: Contiene la configuración principal de Django.
