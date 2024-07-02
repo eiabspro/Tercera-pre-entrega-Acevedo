@@ -1,0 +1,32 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+    <h1 class="mb-5">Usuarios</h1>
+    <br>
+    <a class="btn btn-primary" href="{% url 'usuariosForm' %}">Agregar usuario</a>
+{% endblock titulo %}
+    
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Fecha de registro</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in usuarios %}
+        <tr>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.apellido }}</td>
+            <td>{{ c.email }}</td>
+            <td>{{ c.fecha_registro }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

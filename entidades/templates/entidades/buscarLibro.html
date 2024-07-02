@@ -1,0 +1,18 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+    <h1 class="mb-5">Buscar Libro</h1>
+{% endblock titulo %}
+    
+
+{% block contenido %}
+    <form action="{% url 'encontrarLibro' %}" method="get">
+        {% csrf_token %}
+        <table style="text-align: center;">
+            <p>Ingrese patron de busqueda<input type="text" name="buscar" id="buscar"></p>
+        </table>
+        <input type="submit" value="Buscar">
+    </form>
+    <br>
+{% endblock contenido %}

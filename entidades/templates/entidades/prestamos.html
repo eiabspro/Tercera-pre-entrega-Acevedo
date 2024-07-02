@@ -1,0 +1,32 @@
+{% extends "entidades/index.html" %}
+
+
+{% block titulo %}
+    <h1 class="mb-5">Prestamos</h1>
+    <br>
+    <a class="btn btn-primary" href="{% url 'prestamosForm' %}">Realizar prestamo</a>
+{% endblock titulo %}
+    
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Libro</th>
+            <th>Usuario</th>
+            <th>Fecha de Prestamo</th>
+            <th>Fecha de devolución</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in prestamos %}
+        <tr>
+            <td>{{ c.libro }}</td>
+            <td>{{ c.usuario }}</td>
+            <td>{{ c.fecha_prestamo }}</td>
+            <td>{{ c.fecha_devolucion }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

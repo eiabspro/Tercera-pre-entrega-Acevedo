@@ -1,0 +1,33 @@
+{% extends "entidades/index.html" %}
+    
+{% block titulo %}
+    <h1 class="mb-5">Autores</h1>
+    <br>
+    <a class="btn btn-primary" href="{% url 'autoresForm' %}">Agregar autor</a>
+{% endblock titulo %}
+    
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha de nacimiento</th>
+            <th>Nacionalidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for c in autores %}
+        <tr>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.apellido }}</td>
+            <td>{{ c.fecha_nacimiento }}</td>
+            <td>{{ c.nacionalidad }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock contenido %}
+    
