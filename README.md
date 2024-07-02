@@ -7,10 +7,10 @@ La aplicación permite el añadido y la vista de autores, libros, usuarios y pre
 
 ## Funcionalidades
 
-**Autores**: Permite agregar y ver autores.
-**Libros**: Permite agregar y ver libros.
-**Usuarios**: Permite agregar y ver usuarios.
-**Préstamos**: Permite agregar y ver los prestamos realizados.
+##### **Autores**: Permite agregar y ver autores.
+##### **Libros**: Permite agregar y ver libros.
+##### **Usuarios**: Permite agregar y ver usuarios.
+##### **Préstamos**: Permite agregar y ver los prestamos realizados.
 ---
 **Acerca y Contacto**: Permite ver tanto información sobre la web y un contacto para consultas respectivamente.
 
