@@ -105,8 +105,8 @@ def buscarLibro(request):
 def encontrarLibro(request):
     if request.GET["buscar"]:
         patron = request.GET["buscar"]
-        cursos = Libro.objects.filter(titulo__icontains=patron)
-        contexto = {'libros': cursos}
+        libros = Libro.objects.filter(titulo__icontains=patron)
+        contexto = {'libros': libros}
     else:
         contexto = {'libros': Libro.objects.all()}
     return render(request, "entidades/libros.html", contexto)
